@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:text="@string/pls_make_sure"
             android:fontFamily="serif"
-            android:textSize="20sp"
+            android:textSize="22sp"
             android:textColor="@color/grey_800"/>
 
         <ListView
