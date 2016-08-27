@@ -1,4 +1,4 @@
-package com.thestartup.startuplegalconnect;
+package com.thestartup.startuplegalconnect.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -6,9 +6,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class AboutUs extends Fragment {
+import com.thestartup.startuplegalconnect.R;
 
-    public AboutUs() {
+public class AboutUsFragment extends Fragment {
+
+    public AboutUsFragment() {
         // Required empty public constructor
     }
 

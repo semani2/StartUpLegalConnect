@@ -9,16 +9,13 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ListView;
 
-import com.thestartup.startuplegalconnect.adapters.DrawerItemCustomAdapter;
+import com.thestartup.startuplegalconnect.fragments.AboutUsFragment;
 import com.thestartup.startuplegalconnect.fragments.ApplicabilityFragment;
-import com.thestartup.startuplegalconnect.fragments.DemoFragment;
-import com.thestartup.startuplegalconnect.models.NavigationDrawerDataModel;
+import com.thestartup.startuplegalconnect.fragments.CommonLegalMistakesFragment;
+import com.thestartup.startuplegalconnect.services.ServiceLocator;
 
 public class HomeActivity extends AppCompatActivity {
     Toolbar toolbar;
@@ -45,7 +42,8 @@ public class HomeActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
 
                     case R.id.whoWeAre:
-                        loadFragment(new AboutUs());
+                        loadFragment(new AboutUsFragment());
+                        setTitle(getResources().getString(R.string.who_are_we));
                         return true;
 
                     case R.id.whereWeFit:
@@ -53,6 +51,8 @@ public class HomeActivity extends AppCompatActivity {
                         return true;
 
                     case R.id.commonLegalMistakes:
+                        loadFragment(new CommonLegalMistakesFragment());
+                        setTitle(getString(R.string.common_legel_mistakes));
                         return true;
 
                     case R.id.stepsForStartups:
@@ -86,6 +86,7 @@ public class HomeActivity extends AppCompatActivity {
 
         actionBarDrawerToggle.syncState();
 
+        ServiceLocator.initAllServices(getApplicationContext());
         loadHomeFragment();
     }
 
@@ -96,11 +97,19 @@ public class HomeActivity extends AppCompatActivity {
 
     private void loadHomeFragment() {
         FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.content_frame, new AboutUs()).commit();
+        fragmentManager.beginTransaction().replace(R.id.content_frame, new AboutUsFragment()).commit();
+        setTitle(getResources().getString(R.string.who_are_we));
     }
 
     private void setupToolbar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+    }
+
+    @Override
+    public void setTitle(CharSequence title) {
+        if(getSupportActionBar() != null) {
+            getSupportActionBar().setTitle(title);
+        }
     }
 }
