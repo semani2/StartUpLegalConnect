@@ -21,4 +21,22 @@ public interface ISharedPreferencesSerivce extends IService {
      * @return
      */
     boolean getBoolean(String spName, String key, boolean defValue);
+
+    /**
+     * Sets the int shared preference for the corresponding key
+     * @param spName
+     * @param key
+     * @param value
+     * @return
+     */
+    boolean setInt(String spName, String key, int value);
+
+    /**
+     * Gets the int shared preference for the key
+     * @param spName
+     * @param key
+     * @param defValue
+     * @return
+     */
+    int getInt(String spName, String key, int defValue);
 }

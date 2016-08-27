@@ -22,6 +22,9 @@ public class HomeActivity extends AppCompatActivity {
     NavigationView navigationView;
     DrawerLayout mDrawerLayout;
 
+    private static final String spName = "com.thestartup.startuplegalconnect.navigation";
+    private static final String key = "NAVIGATION_INDEX";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,22 +47,31 @@ public class HomeActivity extends AppCompatActivity {
                     case R.id.whoWeAre:
                         loadFragment(new AboutUsFragment());
                         setTitle(getResources().getString(R.string.who_are_we));
+                        ServiceLocator.sharedpreferences().setInt(spName, key, 0);
                         return true;
 
                     case R.id.whereWeFit:
                         loadFragment(new ApplicabilityFragment());
                         setTitle("Where we fit in?");
+                        ServiceLocator.sharedpreferences().setInt(spName, key, 1);
                         return true;
 
                     case R.id.commonLegalMistakes:
                         loadFragment(new CommonLegalMistakesFragment());
                         setTitle(getString(R.string.common_legel_mistakes));
+                        ServiceLocator.sharedpreferences().setInt(spName, key, 2);
                         return true;
 
                     case R.id.stepsForStartups:
+                        ServiceLocator.sharedpreferences().setInt(spName, key, 3);
+                        return true;
+
+                    case R.id.cyberLawEssentials:
+                        ServiceLocator.sharedpreferences().setInt(spName, key, 4);
                         return true;
 
                     case R.id.askUs:
+                        ServiceLocator.sharedpreferences().setInt(spName, key, 5);
                         return true;
 
                     default:
@@ -88,7 +100,6 @@ public class HomeActivity extends AppCompatActivity {
         actionBarDrawerToggle.syncState();
 
         ServiceLocator.initAllServices(getApplicationContext());
-        loadHomeFragment();
     }
 
     private void loadFragment(Fragment fragment) {
@@ -96,10 +107,42 @@ public class HomeActivity extends AppCompatActivity {
         fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
     }
 
-    private void loadHomeFragment() {
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.content_frame, new AboutUsFragment()).commit();
-        setTitle(getResources().getString(R.string.who_are_we));
+    private void loadLastSelectedFragment() {
+        switch(ServiceLocator.sharedpreferences().getInt(spName, key, 0)) {
+            case 0:
+                loadFragment(new AboutUsFragment());
+                setTitle(getResources().getString(R.string.who_are_we));
+                navigationView.setCheckedItem(R.id.whoWeAre);
+                break;
+
+            case 1:
+                setTitle(getResources().getString(R.string.where_we_fit));
+                navigationView.setCheckedItem(R.id.whereWeFit);
+                break;
+
+            case 2:
+                loadFragment(new CommonLegalMistakesFragment());
+                setTitle(getResources().getString(R.string.common_legel_mistakes));
+                navigationView.setCheckedItem(R.id.commonLegalMistakes);
+                break;
+
+            case 3:
+                setTitle(getResources().getString(R.string.steps_for_startups));
+                navigationView.setCheckedItem(R.id.stepsForStartups);
+                break;
+
+            case 4:
+                setTitle(getResources().getString(R.string.cyberlaw_essentials));
+                navigationView.setCheckedItem(R.id.cyberLawEssentials);
+                break;
+
+            case 5:
+                setTitle(getResources().getString(R.string.ask_us));
+                navigationView.setCheckedItem(R.id.askUs);
+                break;
+
+        }
+
     }
 
     private void setupToolbar() {
@@ -112,5 +155,11 @@ public class HomeActivity extends AppCompatActivity {
         if(getSupportActionBar() != null) {
             getSupportActionBar().setTitle(title);
         }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        loadLastSelectedFragment();
     }
 }
