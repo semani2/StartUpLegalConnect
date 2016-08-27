@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Startup Legal Connect</string>
+
+
+    
+    <string-array name="navigation_drawer_items_array">
+        <item>Who are we?</item>
+        <item>Where we fit in?</item>
+        <item>Common legal mistakes</item>
+        <item>Steps for start-ups</item>
+        <item>Cyber law essentials</item>
+        <item>Ask us</item>
+    </string-array>
 </resources>
