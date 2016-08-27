@@ -109,7 +109,7 @@ public class HomeActivity extends AppCompatActivity {
 
         switch (position) {
             case 0:
-                fragment = new DemoFragment();
+                fragment = new AboutUs();
                 break;
             case 1:
                 //fragment = new FixturesFragment();
