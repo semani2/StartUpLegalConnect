@@ -16,6 +16,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.thestartup.startuplegalconnect.adapters.DrawerItemCustomAdapter;
+import com.thestartup.startuplegalconnect.fragments.ApplicabilityFragment;
 import com.thestartup.startuplegalconnect.fragments.DemoFragment;
 import com.thestartup.startuplegalconnect.models.NavigationDrawerDataModel;
 
@@ -48,7 +49,7 @@ public class HomeActivity extends AppCompatActivity {
                         return true;
 
                     case R.id.whereWeFit:
-                        //loadFragment();
+                        loadFragment(new ApplicabilityFragment());
                         return true;
 
                     case R.id.commonLegalMistakes:
