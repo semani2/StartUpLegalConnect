@@ -1,5 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Startup Legal Connect</string>
+    <string name="about_us_intro">Start-up Legal Connect is a platform intending to bring about an
+        awareness in the Start-up Community regarding their cyber-legal aspects.</string>
+    <string name="intro_doubts">We enable you to get all your doubts regarding
+        legal aspects of start-ups clarified through our legal mentors.</string>
+    <string name="intro_intellectual_protection">We also focus on the legal aspects of a start-up
+        right from protecting your idea till execution of your idea and getting an investor on board.</string>
+    <string name="intro_common_mistakes">We also help start-ups identify the common mistakes which they
+        are not aware of yet have legal implications.</string>
 
 
     

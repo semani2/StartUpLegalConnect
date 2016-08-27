@@ -38,3 +38,8 @@ captures/
 
 # Keystore files
 *.jks
+StartupLegalConnect/.idea/
+StartupLegalConnect/gradle/wrapper/gradle-wrapper.jar
+StartupLegalConnect/gradle/wrapper/gradle-wrapper.properties
+StartupLegalConnect/gradlew
+StartupLegalConnect/gradlew.bat
