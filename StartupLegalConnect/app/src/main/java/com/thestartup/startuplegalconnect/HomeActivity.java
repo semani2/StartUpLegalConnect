@@ -36,7 +36,11 @@ public class HomeActivity extends AppCompatActivity {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                //Replacing the main content with ContentFragment Which is our Inbox View;
+                if(item.isChecked()) item.setChecked(false);
+                else item.setChecked(true);
+
+
+                mDrawerLayout.closeDrawers();
                 switch (item.getItemId()) {
 
                     case R.id.whoWeAre:
