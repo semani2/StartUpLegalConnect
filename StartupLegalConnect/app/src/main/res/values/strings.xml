@@ -41,6 +41,8 @@
     <string name="blog">Blog &amp; blogging platform</string>
     <string name="fashion">Fashion</string>
 
+    <!-- Common Legal Mistakes strings -->
+
     <string name="pls_make_sure">Make sure to avoid these common legal mistakes made by start-ups!</string>
     <string name="logo_protection">Lack of proper legal protection for the company\'s logo.</string>
     <string name="poor_branding">Choosing a poor brand name can lead to trademark issues.</string>
@@ -50,5 +52,12 @@
     <string name="no_legal_doc">It is always beneficial to maintain proper legal documentation.</string>
     <string name="cut_and_paste">Do not cut and paste legal agreements from the internet. Every start-up needs appropriate customization of documents</string>
     <string name="diy_mistake">Do not take a DO-IT-YOURSELF approach to legal documents.</string>
+
+    <!-- Ask Us String -->
+    <string name="strSendQuestions">Send us your questions</string>
+    <string name="strName">Name (required)</string>
+    <string name="strEmail">Email ID (required)</string>
+    <string name="strQuestions">Query (required)</string>
+    <string name="strSend">Send</string>
 
 </resources>

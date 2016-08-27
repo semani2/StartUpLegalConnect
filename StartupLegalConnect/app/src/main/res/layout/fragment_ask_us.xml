@@ -1,0 +1,85 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.thestartup.startuplegalconnect.fragments.AskUsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/strSendQuestions"
+                android:fontFamily="serif"
+                android:textSize="22sp"
+                android:gravity="center_horizontal"/>
+            
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/userName"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:fontFamily="serif"
+                android:textSize="16sp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/strName"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/userEmail"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"
+                android:fontFamily="serif"
+                android:textSize="16sp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/strEmail"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/userQuery"
+                android:inputType="textMultiLine"
+                android:minLines="5"
+                android:maxLines="10"
+                android:imeOptions="actionGo"
+                android:fontFamily="serif"
+                android:textSize="16sp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/strQuestions"/>
+            
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/strSend"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/sendButton"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

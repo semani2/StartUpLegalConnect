@@ -14,6 +14,7 @@ import android.view.View;
 
 import com.thestartup.startuplegalconnect.fragments.AboutUsFragment;
 import com.thestartup.startuplegalconnect.fragments.ApplicabilityFragment;
+import com.thestartup.startuplegalconnect.fragments.AskUsFragment;
 import com.thestartup.startuplegalconnect.fragments.CommonLegalMistakesFragment;
 import com.thestartup.startuplegalconnect.services.ServiceLocator;
 
@@ -71,6 +72,8 @@ public class HomeActivity extends AppCompatActivity {
                         return true;
 
                     case R.id.askUs:
+                        loadFragment(new AskUsFragment());
+                        setTitle(getString(R.string.ask_us));
                         ServiceLocator.sharedpreferences().setInt(spName, key, 5);
                         return true;
 
@@ -116,6 +119,7 @@ public class HomeActivity extends AppCompatActivity {
                 break;
 
             case 1:
+                loadFragment(new ApplicabilityFragment());
                 setTitle(getResources().getString(R.string.where_we_fit));
                 navigationView.setCheckedItem(R.id.whereWeFit);
                 break;
@@ -137,6 +141,7 @@ public class HomeActivity extends AppCompatActivity {
                 break;
 
             case 5:
+                loadFragment(new AskUsFragment());
                 setTitle(getResources().getString(R.string.ask_us));
                 navigationView.setCheckedItem(R.id.askUs);
                 break;
