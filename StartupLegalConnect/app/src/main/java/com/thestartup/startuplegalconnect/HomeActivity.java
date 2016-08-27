@@ -52,6 +52,17 @@ public class HomeActivity extends AppCompatActivity {
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerLayout.setDrawerListener(mDrawerToggle);
         setupDrawerToggle();
+
+        loadHomeFragment();
+    }
+
+    private void loadHomeFragment() {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.content_frame, new AboutUs()).commit();
+
+        mDrawerList.setItemChecked(0, true);
+        mDrawerList.setSelection(0);
+        setTitle(mNavigationDrawerItemTitles[0]);
     }
 
     private void setupDrawerToggle() {
