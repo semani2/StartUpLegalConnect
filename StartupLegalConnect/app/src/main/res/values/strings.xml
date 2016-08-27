@@ -17,4 +17,14 @@
     <string name="ask_us">Ask us</string>
     <string name="open_drawer">Open drawer</string>
     <string name="close_drawer">Close drawer</string>
+    <string name="pls_make_sure">Make sure to avoid these common legal mistakes made by start-ups!</string>
+
+    <string name="logo_protection">Lack of proper legal protection for the company\'s logo.</string>
+    <string name="poor_branding">Choosing a poor brand name can lead to trademark issues.</string>
+    <string name="ip_issues">Open-sourcing can lead to IP related conflicts.</string>
+    <string name="copyright_mistake">Using copyright symbol with applying or proper registration is illegal.</string>
+    <string name="hyperlinking_mistake">Adding links to images, videos, youtube content without permissions is a common mistake.</string>
+    <string name="no_legal_doc">It is always beneficial to maintain proper legal documentation.</string>
+    <string name="cut_and_paste">Do not cut and paste legal agreements from the internet. Every start-up needs appropriate customization of documents</string>
+    <string name="diy_mistake">Do not take a DO-IT-YOURSELF approach to legal documents.</string>
 </resources>
