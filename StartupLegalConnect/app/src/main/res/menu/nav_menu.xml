@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/whoWeAre"
+            android:checked="false"
+            android:icon="@mipmap/ic_people_black_24dp"
+            android:title="@string/who_are_we" />
+
+        <item
+            android:id="@+id/whereWeFit"
+            android:checked="false"
+            android:icon="@mipmap/ic_extension_black_24dp"
+            android:title="@string/where_we_fit" />
+
+        <item
+            android:id="@+id/commonLegalMistakes"
+            android:checked="false"
+            android:icon="@mipmap/ic_report_problem_black_24dp"
+            android:title="@string/common_legel_mistakes" />
+
+        <item
+            android:id="@+id/stepsForStartups"
+            android:checked="false"
+            android:icon="@mipmap/ic_list_black_24dp"
+            android:title="@string/steps_for_startups" />
+
+
+        <item
+            android:id="@+id/cyberLawEssentials"
+            android:checked="false"
+            android:icon="@mipmap/ic_gavel_black_24dp"
+            android:title="@string/cyberlaw_essentials" />
+        <item
+            android:id="@+id/askUs"
+            android:checked="false"
+            android:icon="@mipmap/ic_feedback_black_24dp"
+            android:title="@string/ask_us" />
+
+    </group>
+</menu>
