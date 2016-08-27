@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.thestartup.startuplegalconnect.fragments.AboutUsFragment;
+import com.thestartup.startuplegalconnect.fragments.ApplicabilityFragment;
 import com.thestartup.startuplegalconnect.fragments.CommonLegalMistakesFragment;
 import com.thestartup.startuplegalconnect.services.ServiceLocator;
 
@@ -50,7 +51,8 @@ public class HomeActivity extends AppCompatActivity {
                         return true;
 
                     case R.id.whereWeFit:
-                        //loadFragment();
+                        loadFragment(new ApplicabilityFragment());
+                        setTitle("Where we fit in?");
                         ServiceLocator.sharedpreferences().setInt(spName, key, 1);
                         return true;
 
