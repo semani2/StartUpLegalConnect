@@ -9,4 +9,15 @@
         right from protecting your idea till execution of your idea and getting an investor on board.</string>
     <string name="intro_common_mistakes">We also help start-ups identify the common mistakes which they
         are not aware of yet have legal implications.</string>
+
+
+    
+    <string-array name="navigation_drawer_items_array">
+        <item>Who are we?</item>
+        <item>Where we fit in?</item>
+        <item>Common legal mistakes</item>
+        <item>Steps for start-ups</item>
+        <item>Cyber law essentials</item>
+        <item>Ask us</item>
+    </string-array>
 </resources>
