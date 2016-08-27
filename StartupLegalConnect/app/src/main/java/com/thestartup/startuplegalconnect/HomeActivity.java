@@ -48,6 +48,7 @@ public class HomeActivity extends AppCompatActivity {
 
                     case R.id.whereWeFit:
                         loadFragment(new ApplicabilityFragment());
+                        setTitle("Where we fit in?");
                         return true;
 
                     case R.id.commonLegalMistakes:
