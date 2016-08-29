@@ -16,6 +16,7 @@ import com.thestartup.startuplegalconnect.fragments.AboutUsFragment;
 import com.thestartup.startuplegalconnect.fragments.ApplicabilityFragment;
 import com.thestartup.startuplegalconnect.fragments.AskUsFragment;
 import com.thestartup.startuplegalconnect.fragments.CommonLegalMistakesFragment;
+import com.thestartup.startuplegalconnect.fragments.StartupStepsFragment;
 import com.thestartup.startuplegalconnect.services.ServiceLocator;
 
 public class HomeActivity extends AppCompatActivity {
@@ -64,6 +65,8 @@ public class HomeActivity extends AppCompatActivity {
                         return true;
 
                     case R.id.stepsForStartups:
+                        loadFragment(new StartupStepsFragment());
+                        setTitle("Steps for start-ups");
                         ServiceLocator.sharedpreferences().setInt(spName, key, 3);
                         return true;
 
