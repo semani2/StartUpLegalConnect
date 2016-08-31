@@ -31,7 +31,7 @@
     <string name="cloud_based">Cloud based platforms &amp; products</string>
     <string name="iot">Internet of Things based products</string>
     <string name="websites_mobile">Software development</string>
-    <string name="food_tech">Food technology (Fintech)</string>
+    <string name="food_tech">Food technology</string>
     <string name="fin_tech">Financial technology (Fintech)</string>
     <string name="agri_tech">Agriculture technology (Agritech)</string>
     <string name="on_demand">On demand solutions &amp; platforms</string>
@@ -50,7 +50,7 @@
     <string name="copyright_mistake">Using copyright symbol with applying or proper registration is illegal.</string>
     <string name="hyperlinking_mistake">Adding links to images, videos, youtube content without permissions is a common mistake.</string>
     <string name="no_legal_doc">It is always beneficial to maintain proper legal documentation.</string>
-    <string name="cut_and_paste">Do not cut and paste legal agreements from the internet. Every start-up needs appropriate customization of documents</string>
+    <string name="cut_and_paste">Do not cut, copy and paste legal agreements from the internet.</string>
     <string name="diy_mistake">Do not take a DO-IT-YOURSELF approach to legal documents.</string>
 
     <!-- Ask Us String -->
