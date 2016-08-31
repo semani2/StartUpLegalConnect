@@ -60,4 +60,12 @@
     <string name="strQuestions">Query (required)</string>
     <string name="strSend">Send</string>
 
+    <!-- Cyber law essentials strings -->
+    <string name="strCyberLawCompliance">Please make sure your start-up is cyber-law compliant</string>
+    <string name="strPrivacyPolicy"><b>Privacy policy</b> - as per cyber law rules and regulations</string>
+    <string name="strTOU"><b>Terms of use</b> - as per cyber law rules and regulations</string>
+    <string name="strGrievanceMechanism"><b>Grievance mechanism</b> - as per cyber law rules and regulations</string>
+    <string name="strComplianceAgreement">Cyber law compliance agreement</string>
+    <string name="strLegalDisclaimer">Legal disclaimer</string>
+
 </resources>

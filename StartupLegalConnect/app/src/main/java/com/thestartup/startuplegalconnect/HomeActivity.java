@@ -16,6 +16,7 @@ import com.thestartup.startuplegalconnect.fragments.AboutUsFragment;
 import com.thestartup.startuplegalconnect.fragments.ApplicabilityFragment;
 import com.thestartup.startuplegalconnect.fragments.AskUsFragment;
 import com.thestartup.startuplegalconnect.fragments.CommonLegalMistakesFragment;
+import com.thestartup.startuplegalconnect.fragments.CyberLawEssentialsFragment;
 import com.thestartup.startuplegalconnect.services.ServiceLocator;
 
 public class HomeActivity extends AppCompatActivity {
@@ -68,6 +69,8 @@ public class HomeActivity extends AppCompatActivity {
                         return true;
 
                     case R.id.cyberLawEssentials:
+                        loadFragment(new CyberLawEssentialsFragment());
+                        setTitle(getString(R.string.cyberlaw_essentials));
                         ServiceLocator.sharedpreferences().setInt(spName, key, 4);
                         return true;
 
@@ -136,6 +139,7 @@ public class HomeActivity extends AppCompatActivity {
                 break;
 
             case 4:
+                loadFragment(new CyberLawEssentialsFragment());
                 setTitle(getResources().getString(R.string.cyberlaw_essentials));
                 navigationView.setCheckedItem(R.id.cyberLawEssentials);
                 break;
