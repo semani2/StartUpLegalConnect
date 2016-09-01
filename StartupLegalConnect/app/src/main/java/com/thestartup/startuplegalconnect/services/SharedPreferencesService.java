@@ -40,4 +40,14 @@ public class SharedPreferencesService implements ISharedPreferencesSerivce {
     public int getInt(String spName, String key, int defValue) {
         return getPreferences(spName).getInt(key, defValue);
     }
+
+    @Override
+    public boolean setString(String spName, String key, String value) {
+        return editor(spName).putString(key, value).commit();
+    }
+
+    @Override
+    public String getString(String spName, String key, String defValue) {
+        return getPreferences(spName).getString(key, defValue);
+    }
 }

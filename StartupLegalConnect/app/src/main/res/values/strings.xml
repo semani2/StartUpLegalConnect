@@ -14,6 +14,7 @@
     <string name="common_legel_mistakes">Common legal mistakes</string>
     <string name="steps_for_startups">Steps for start-ups</string>
     <string name="cyberlaw_essentials">Cyber law essentials</string>
+    <string name="legal_mentor">Legal Mentor</string>
     <string name="ask_us">Ask us</string>
     <string name="open_drawer">Open drawer</string>
     <string name="close_drawer">Close drawer</string>
@@ -31,7 +32,7 @@
     <string name="cloud_based">Cloud based platforms &amp; products</string>
     <string name="iot">Internet of Things based products</string>
     <string name="websites_mobile">Software development</string>
-    <string name="food_tech">Food technology (Fintech)</string>
+    <string name="food_tech">Food technology</string>
     <string name="fin_tech">Financial technology (Fintech)</string>
     <string name="agri_tech">Agriculture technology (Agritech)</string>
     <string name="on_demand">On demand solutions &amp; platforms</string>
@@ -50,7 +51,7 @@
     <string name="copyright_mistake">Using copyright symbol with applying or proper registration is illegal.</string>
     <string name="hyperlinking_mistake">Adding links to images, videos, youtube content without permissions is a common mistake.</string>
     <string name="no_legal_doc">It is always beneficial to maintain proper legal documentation.</string>
-    <string name="cut_and_paste">Do not cut and paste legal agreements from the internet. Every start-up needs appropriate customization of documents</string>
+    <string name="cut_and_paste">Do not cut, copy and paste legal agreements from the internet.</string>
     <string name="diy_mistake">Do not take a DO-IT-YOURSELF approach to legal documents.</string>
 
     <!-- Ask Us String -->
@@ -59,5 +60,24 @@
     <string name="strEmail">Email ID (required)</string>
     <string name="strQuestions">Query (required)</string>
     <string name="strSend">Send</string>
+
+    <!-- Cyber law essentials strings -->
+    <string name="strCyberLawCompliance">Please make sure your start-up is cyber-law compliant</string>
+    <string name="strPrivacyPolicy"><b>Privacy policy</b> - as per cyber law rules and regulations</string>
+    <string name="strTOU"><b>Terms of use</b> - as per cyber law rules and regulations</string>
+    <string name="strGrievanceMechanism"><b>Grievance mechanism</b> - as per cyber law rules and regulations</string>
+    <string name="strComplianceAgreement">Cyber law compliance agreement</string>
+    <string name="strLegalDisclaimer">Legal disclaimer</string>
+
+    <!-- Legal Mentor -->
+    <string name="para1">Mr. Sai Sushanth is a cyber law expert and a techno legal consultant. He is a start-up legal mentor to many start-up incubators across the country.
+    He has been advising many start-ups on different legal aspects. His niche areas of expertise include cyber law, intellectual property law and legal aspects of start-ups,
+        e-commerce, cloud computing, big data analytics, m-commerce, online business, IOT.</string>
+
+    <string name="para2">He has spoken in various start-up events and conferences and has come up with an initiative of "Cyber laws for start-ups". He has authored an e-book titled
+    "Websites and Indian Cyber law", currently available on Amazon and an android mobile app named "Cyber law 4 u" promoting cyber law awareness.</string>
+
+    <string name="para3">He is one among the 45 cyber law auditors in India. He is regularly interviewed by media as a cyber law expert and has addressed various cyber legal
+    issues including social media and law, e-commerce and legal aspects, cyber crimes &amp; law.</string>
 
 </resources>
