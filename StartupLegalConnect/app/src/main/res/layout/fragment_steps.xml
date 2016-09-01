@@ -6,29 +6,38 @@
     android:paddingStart="10dp"
     android:paddingEnd="10dp"
     android:layout_marginTop="10dp"
-    android:layout_marginBottom="25dp">
+    android:paddingBottom="25dp">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="none">
-        <LinearLayout
+        android:scrollbars="none"
+        android:fillViewport="false">
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <VideoView
-                android:layout_width="wrap_content"
-                android:layout_height="350dp"
-                android:id="@+id/videoView"
-                android:layout_gravity="center_horizontal"/>
-
-            <TextView
-                android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="(Click above to play an informational video)"
-                android:textSize="14sp"
-                android:layout_marginTop="3dp"
-                android:layout_gravity="center_horizontal"/>
+                android:orientation="vertical"
+                android:id="@+id/relative1">
+
+                <VideoView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:id="@+id/videoView"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(Click above to play an informational video)"
+                    android:textSize="14sp"
+                    android:layout_marginTop="3dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/videoView"
+                    android:id="@+id/text1"/>
+        </RelativeLayout>
+
 
             <TextView
                 android:layout_width="match_parent"
@@ -38,9 +47,12 @@
                 android:textSize="22sp"
                 android:textColor="@color/colorPrimary"
                 android:id="@+id/launchStepCheck"
-                android:layout_gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
                 android:gravity="center_horizontal"
-                android:layout_marginTop="50dp"/>
-        </LinearLayout>
+                android:layout_below="@+id/relative1"
+                android:layout_marginTop="50dp"
+                />
+
+        </RelativeLayout>
     </ScrollView>
 </FrameLayout>

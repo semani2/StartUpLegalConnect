@@ -2,6 +2,7 @@ package com.thestartup.startuplegalconnect.fragments;
 
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -14,10 +15,12 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.util.AttributeSet;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.MediaController;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.VideoView;
 
@@ -50,9 +53,16 @@ public class StepsFragment extends Fragment {
         Uri uri = Uri.parse(uriPath);
         videoView.setVideoURI(uri);
         mediaController = new MyMediaController(getContext());
-        mediaController.setAnchorView(videoView);
+        mediaController.setAnchorView(textView);
         mediaController.setMediaPlayer(videoView);
         videoView.setMediaController(mediaController);
+
+        if(getResources().getBoolean(R.bool.isTablet)) {
+            Resources r = getResources();
+            float px = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 560, r.getDisplayMetrics());
+            RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, Math.round(px));
+            videoView.setLayoutParams(layoutParams);
+        }
 
         textView.setOnClickListener(new View.OnClickListener() {
             @Override

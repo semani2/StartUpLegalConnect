@@ -58,9 +58,6 @@ public class CommonMistakesAdapter extends BaseAdapter {
         checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if(b) {
-                    Toast.makeText(context, "Awesome job! You have avoided potential legal problems.", Toast.LENGTH_SHORT).show();
-                }
                 viewModels.get(position).setIsChecked(b);
             }
         });

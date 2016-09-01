@@ -48,7 +48,7 @@
     <string name="logo_protection">Lack of proper legal protection for the company\'s logo.</string>
     <string name="poor_branding">Choosing a poor brand name can lead to trademark issues.</string>
     <string name="ip_issues">Open-sourcing can lead to IP related conflicts.</string>
-    <string name="copyright_mistake">Using copyright symbol with applying or proper registration is illegal.</string>
+    <string name="copyright_mistake">Using copyright symbol without applying or proper registration is illegal.</string>
     <string name="hyperlinking_mistake">Adding links to images, videos, youtube content without permissions is a common mistake.</string>
     <string name="no_legal_doc">It is always beneficial to maintain proper legal documentation.</string>
     <string name="cut_and_paste">Do not cut, copy and paste legal agreements from the internet.</string>
