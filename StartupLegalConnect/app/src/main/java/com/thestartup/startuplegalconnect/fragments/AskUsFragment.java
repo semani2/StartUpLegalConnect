@@ -50,12 +50,12 @@ public class AskUsFragment extends Fragment {
         }
 
         if(emailEditText.getText().toString().trim().isEmpty() || !isValidEmail(emailEditText.getText().toString())) {
-            nameEditText.setError("Please enter your name");
+            emailEditText.setError("Please enter a valid email");
             isValidated = false;
         }
 
         if(queryEditText.getText().toString().trim().isEmpty()) {
-            nameEditText.setError("Please enter your name");
+            queryEditText.setError("Please enter your question/comments");
             isValidated = false;
         }
 
