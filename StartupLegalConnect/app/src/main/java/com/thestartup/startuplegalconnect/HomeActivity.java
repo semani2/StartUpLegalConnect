@@ -16,7 +16,8 @@ import com.thestartup.startuplegalconnect.fragments.AboutUsFragment;
 import com.thestartup.startuplegalconnect.fragments.ApplicabilityFragment;
 import com.thestartup.startuplegalconnect.fragments.AskUsFragment;
 import com.thestartup.startuplegalconnect.fragments.CommonLegalMistakesFragment;
-import com.thestartup.startuplegalconnect.fragments.CyberLawEssentialsFragment;
+import com.thestartup.startuplegalconnect.fragments.LegalMentorFragment;
+import com.thestartup.startuplegalconnect.fragments.StepsFragment;
 import com.thestartup.startuplegalconnect.fragments.StartupStepsFragment;
 import com.thestartup.startuplegalconnect.services.ServiceLocator;
 
@@ -66,14 +67,14 @@ public class HomeActivity extends AppCompatActivity {
                         return true;
 
                     case R.id.stepsForStartups:
-                        loadFragment(new StartupStepsFragment());
+                        loadFragment(new StepsFragment());
                         setTitle("Steps for start-ups");
                         ServiceLocator.sharedpreferences().setInt(spName, key, 3);
                         return true;
 
-                    case R.id.cyberLawEssentials:
-                        loadFragment(new CyberLawEssentialsFragment());
-                        setTitle(getString(R.string.cyberlaw_essentials));
+                    case R.id.legalMentor:
+                        loadFragment(new LegalMentorFragment());
+                        setTitle(getString(R.string.legal_mentor));
                         ServiceLocator.sharedpreferences().setInt(spName, key, 4);
                         return true;
 
@@ -137,14 +138,15 @@ public class HomeActivity extends AppCompatActivity {
                 break;
 
             case 3:
+                loadFragment(new StepsFragment());
                 setTitle(getResources().getString(R.string.steps_for_startups));
                 navigationView.setCheckedItem(R.id.stepsForStartups);
                 break;
 
             case 4:
-                loadFragment(new CyberLawEssentialsFragment());
-                setTitle(getResources().getString(R.string.cyberlaw_essentials));
-                navigationView.setCheckedItem(R.id.cyberLawEssentials);
+                loadFragment(new LegalMentorFragment());
+                setTitle(getResources().getString(R.string.legal_mentor));
+                navigationView.setCheckedItem(R.id.legalMentor);
                 break;
 
             case 5:

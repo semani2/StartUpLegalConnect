@@ -28,10 +28,10 @@
 
 
         <item
-            android:id="@+id/cyberLawEssentials"
+            android:id="@+id/legalMentor"
             android:checked="false"
             android:icon="@mipmap/ic_gavel_black_24dp"
-            android:title="@string/cyberlaw_essentials" />
+            android:title="@string/legal_mentor" />
         <item
             android:id="@+id/askUs"
             android:checked="false"
