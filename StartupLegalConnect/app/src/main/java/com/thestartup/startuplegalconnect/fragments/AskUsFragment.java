@@ -63,7 +63,7 @@ public class AskUsFragment extends Fragment {
             final Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
 
             emailIntent.setType("plain/text");
-            emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"cyberlawsknowledgecentre@gmail.com"});
+            emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"startuplegalconnect@gmail.com"});
             emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Query from "+nameEditText.getText().toString());
             emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, "You have a query from the legal connect android app :\n"
                     +queryEditText.getText().toString());
